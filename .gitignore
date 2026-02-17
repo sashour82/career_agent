@@ -1,4 +1,16 @@
+# Environment
 .env
+.venv/
 __pycache__/
 *.pyc
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# Binary assets (handled manually in HF)
+assets/*.png
+assets/*.jpg
+assets/*.jpeg
+assets/*.webp
+me/*.pdf

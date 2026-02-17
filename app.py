@@ -10,19 +10,14 @@ import gradio as gr
 load_dotenv(override=True)
 
 def push(text):
-    url = f"https://api.telegram.org/bot{os.getenv('TELEGRAM_BOT_TOKEN')}/sendMessage"
-    
-    payload = {
-        "chat_id": os.getenv("TELEGRAM_CHAT_ID"),
-        "text": text,
-        "parse_mode": "HTML"
-    }
-
-    try:
-        response = requests.post(url, json=payload, timeout=10)
-        response.raise_for_status()
-    except Exception as e:
-        print(f"Telegram error: {e}")
+    requests.post(
+        "https://api.pushover.net/1/messages.json",
+        data={
+            "token": os.getenv("PUSHOVER_TOKEN"),
+            "user": os.getenv("PUSHOVER_USER"),
+            "message": text,
+        }
+    )
 
 
 def record_user_details(email, name="Name not provided", notes="not provided"):
@@ -82,14 +77,13 @@ class Me:
 
     def __init__(self):
         self.openai = OpenAI()
-        self.name = "Saad Ashour"
-        reader = PdfReader("me/SaadCV_en_CEO.pdf")
+        self.name = "Ed Donner"
+        reader = PdfReader("me/linkedin.pdf")
         self.linkedin = ""
         for page in reader.pages:
             text = page.extract_text()
             if text:
                 self.linkedin += text
-
         with open("me/summary.txt", "r", encoding="utf-8") as f:
             self.summary = f.read()
 

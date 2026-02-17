@@ -12,13 +12,13 @@ pinned: false
 # career_agent
 
 <p align="center">
-  <img src="assets/architecture.png" width="950" style="border:2px solid #d0d7de; border-radius:10px;"/>
+  <img src="architecture.png" width="950" style="border:2px solid #d0d7de; border-radius:10px;"/>
 </p>
 
 <p align="center">
   🚀 <strong>Live Demo:</strong><br>
-  <a href="https://huggingface.co/spaces/sashour82/career_agent">
-    https://huggingface.co/spaces/sashour82/career_agent
+  <a href="https://huggingface.co/spaces/YOUR_USERNAME/career_agent">
+    https://huggingface.co/spaces/YOUR_USERNAME/career_agent
   </a>
 </p>
 
