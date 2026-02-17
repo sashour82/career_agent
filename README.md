@@ -9,6 +9,8 @@ app_file: app.py
 pinned: false
 ---
 
+Test sync
+
 # career_agent
 
 <p align="center">
