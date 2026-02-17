@@ -1,7 +1,7 @@
 # career_agent
 
 <p align="center">
-  <img src="architecture.png" width="950" style="border:2px solid #d0d7de; border-radius:10px;"/>
+  <img src="assets/architecture.png" width="950" style="border:2px solid #d0d7de; border-radius:10px;"/>
 </p>
 
 <p align="center">
