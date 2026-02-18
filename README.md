@@ -17,8 +17,8 @@ pinned: false
 
 <p align="center">
   🚀 <strong>Live Demo:</strong><br>
-  <a href="https://huggingface.co/spaces/YOUR_USERNAME/career_agent">
-    https://huggingface.co/spaces/YOUR_USERNAME/career_agent
+  <a href="https://huggingface.co/spaces/sashour82/career_agent">
+    https://huggingface.co/spaces/sashour82/career_agent
   </a>
 </p>
 
